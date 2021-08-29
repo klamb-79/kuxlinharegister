@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
     <form name="form_main" action="">
         <div class="form">
             <div class="title">Welcome</div>
@@ -31,22 +31,22 @@
             <p id="end_url"></p>
             <button type="button" onclick="generateLink()" class="submit">submit</button>
     </div>
-    </form>      
-           
-            
+    </form>
+
+
             <!-- <button type="button" onclick="generateLink()">Submit</button> -->
-        
+
     </div>
-    
+
     <script> function generateLink() {
         let firstname = document.form_main.firstname.value;
         let lastname = document.form_main.lastname.value;
         let email = document.form_main.email.value;
-        let url = "https://api.whatsapp.com/send?phone=5016378064";
+        let url = "https://api.whatsapp.com/send?phone=5016153524";
         let end_url = `${url}&text=${firstname} ${lastname}: ${email}`;
         window.location.href = end_url;
         // document.getElementById('end_url').innerText = end_url;
       }</script>
-   
+
 </body>
 </html>
